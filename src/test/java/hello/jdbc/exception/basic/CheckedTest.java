@@ -30,6 +30,12 @@ public class CheckedTest {
     static class MyCheckedException extends Exception{
         public MyCheckedException(String message){
             super(message);
+            /**
+             * public Exception(String message) {
+             *    super(message);
+             * }
+             * super()의 경우 부모의 생성자를 불러오는 것으로 Exception의 생성자에 message를 넣어주는 것이다.
+             */
         }
     }
 
